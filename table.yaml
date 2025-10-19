@@ -1,0 +1,11 @@
+Resource
+  Type: AWS::DynamoDB::Table
+  Properties:
+    TableName: DevOpsLabTable
+    AttributeDefinitions:
+      - AttributeName: ID
+        AttributeType: S
+    KeySchema:
+      - AttributeName: ID
+        KeyType: HASH
+    BillingMode: PAYPERREQUEST
